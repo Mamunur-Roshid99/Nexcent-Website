@@ -6,7 +6,7 @@ const Achivement = () => {
     const [achivementData, setAchivementData] = useState(AchivementData)
 
   return (
-    <article className="bg-[#F5F7FA] w-full h-[288px] flex items-center justify-center">
+    <article id='product' className="bg-[#F5F7FA] w-full h-[288px] flex items-center justify-center">
       <div className="w-[90%] mx-auto flex items-center justify-between">
         {/* text */}
         <div className="w-[50%] flex flex-col gap-2">

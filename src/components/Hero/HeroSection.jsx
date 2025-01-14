@@ -2,7 +2,7 @@ import React from 'react'
 
 const HeroSection = () => {
   return (
-    <section className="bg-[#F5F7FA] w-full h-[500px] ">
+    <section id='home' className="bg-[#F5F7FA] w-full mt-[84px] h-[500px] ">
       <div className="w-[90%] mx-auto flex flex-col gap-16">
         <div className="flex items-center justify-between">
           <div className="flex flex-col gap-[22px]">

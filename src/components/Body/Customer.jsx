@@ -4,7 +4,7 @@ import { FaArrowRight } from "react-icons/fa";
 
 const Customer = () => {
   return (
-    <article className="bg-[#F5F7FA] h-[390px] w-full flex items-center justify-center">
+    <article id='testimoinal' className="bg-[#F5F7FA] h-[390px] w-full flex items-center justify-center">
       <div className="w-[90%] mx-auto flex items-center justify-between">
         {/* img */}
         <div className="w-[40%]">

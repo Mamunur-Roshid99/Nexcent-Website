@@ -2,7 +2,7 @@ import React from 'react'
 
 const Unlock = () => {
   return (
-    <article className="w-full h-[433px] flex items-center justify-center">
+    <article id='feature' className="w-full h-[433px] flex items-center justify-center">
       <div className="w-[90%] mx-auto flex items-center justify-between">
         {/* img */}
         <div className="w-[45%]">

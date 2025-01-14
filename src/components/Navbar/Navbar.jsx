@@ -1,8 +1,30 @@
-import React from 'react'
+import { useEffect, useState } from 'react';
 
 const Navbar = () => {
+
+   const [isScrolled, setIsScrolled] = useState(false);
+
+   useEffect(()=> {
+    const handleScrolled = () => {
+      if(window.pageYOffset > 0) {
+        setIsScrolled(true)
+      }else {
+        setIsScrolled(false)
+      }
+    }
+
+    window.addEventListener("scroll", handleScrolled);
+    return () => {
+      window.removeEventListener("scroll", handleScrolled);
+    }
+   }, [])
+
   return (
-    <header className="bg-[#F5F7FA] w-full h-[84px] flex items-center justify-center">
+    <header
+      className={`fixed w-full ${
+        isScrolled && "shadow-md"
+      } bg-[#F5F7FA] h-[84px] flex items-center justify-center`}
+    >
       <nav className="w-[90%] mx-auto flex items-center gap-14 justify-between">
         {/* logo */}
         <div>
@@ -13,22 +35,22 @@ const Navbar = () => {
         <div>
           <ul className="flex gap-12 font-normal text-base text-[#18191F]">
             <li>
-              <a href="#">Home</a>
+              <a href="#home">Home</a>
             </li>
             <li>
-              <a href="#">Service</a>
+              <a href="#service">Service</a>
             </li>
             <li>
-              <a href="#">Feature</a>
+              <a href="#feature">Feature</a>
             </li>
             <li>
-              <a href="#">Product</a>
+              <a href="#product">Product</a>
             </li>
             <li>
-              <a href="#">Testimonial</a>
+              <a href="#testimoinal">Testimonial</a>
             </li>
             <li>
-              <a href="#">FAQ</a>
+              <a href="#faq">FAQ</a>
             </li>
           </ul>
         </div>

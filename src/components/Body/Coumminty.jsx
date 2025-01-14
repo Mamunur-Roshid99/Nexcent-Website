@@ -8,7 +8,7 @@ const Coumminty = () => {
     const [coummintyData, setCoummintyData] = useState(CoummintyData)
 
   return (
-    <article className="bg-[#FFFFFF] w-full h-[506px]">
+    <article id='faq' className="bg-[#FFFFFF] w-full h-[506px]">
       <div className="w-[90%] mx-auto flex flex-col gap-4">
         {/* text */}
         <div className="flex flex-col gap-2 text-center w-[700px] mx-auto">

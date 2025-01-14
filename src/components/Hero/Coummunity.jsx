@@ -6,7 +6,7 @@ const Coummunity = () => {
     const [coummunityData, setCoummunityData] = useState(CoummunityData)
 
   return (
-    <section className="bg-[#ffffff] w-full">
+    <section id='service' className="bg-[#ffffff] w-full">
       <div className="w-[90%] mx-auto flex flex-col gap-4">
         <div className="text-center flex flex-col gap-2">
           <h2 className="text-[#4D4D4D] text-4xl font-semibold">
